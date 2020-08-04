@@ -8,7 +8,12 @@
 <body>
 
     <div id="app">
-        <h2>{{ name }}</h2>
+        <div>
+            <span>{{ returnName() }}</span>
+            <a v-bind:href="anchor">Google</a>
+            <input type="text" v-on:input="changeName">
+        </div>
+        <div v-html="link"></div>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
